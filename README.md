@@ -34,7 +34,10 @@ EMAIL_PASSWORD=your_email_password
 ALERT_EMAIL=alert_recipient_email@gmail.com
 
 ** Start the server - 
-npm start
+node server.js
+
+** frontend -
+npm run dev
 
 ** Conclusion
 This project implements a robust alerting system to monitor and track failed POST requests, sending timely email alerts when unusual activity is detected.
