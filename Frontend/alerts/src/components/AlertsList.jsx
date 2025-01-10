@@ -1,5 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
+import mail from '../assets/mail.png';
+
 
 function AlertsList() {
   const [metrics, setMetrics] = useState([]); // State to store the metrics data
@@ -50,6 +52,12 @@ function AlertsList() {
           ))}
         </tbody>
       </table>
+      
+      {/* <div id="alerts">
+        <p>Gmail Alerts</p>
+        <img src={mail} width={900} />
+      </div> */}
+    
     </div>
   );
 }
