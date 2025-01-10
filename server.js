@@ -5,10 +5,11 @@ const mongoose = require('mongoose');                    // for DB
 const nodemailer = require('nodemailer');                  // help for email notify
 const FailedRequest = require('./models/FailedRequest');     // import module   
 const metricsRoute = require('./routes/metrics');          // import from route
-
+const cors = require('cors');
 
 const app = express();
 app.use(bodyParser.json());
+app.use(cors());                // enable cors for all routes
 
 
 // Connection to DB
